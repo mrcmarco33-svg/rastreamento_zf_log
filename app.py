@@ -14,6 +14,27 @@ st.set_page_config(
     layout="wide",
 )
 
+st.markdown(
+    """
+    <style>
+    .marca-dagua {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        font-size: 13px;
+        color: rgba(120, 120, 120, 0.75);
+        z-index: 9999;
+        pointer-events: none;
+    }
+    </style>
+
+    <div class="marca-dagua">
+        Desenvolvido por: Marco Antonio
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 ROLE_LABELS = {
     "admin": "Administrador",
     "operator": "Operador",
@@ -1097,4 +1118,4 @@ elif page == "👥 Usuários":
             }), use_container_width=True, hide_index=True)
 
 st.sidebar.divider()
-st.sidebar.caption("V4 · Supabase PostgreSQL + Supabase Auth")
+st.sidebar.caption("Desenvolvido por @Marco Antonio")
